@@ -1,0 +1,14 @@
+Gram-matcher
+------------
+
+
+Match lexico-grammer templates with natural language sentences, using pymorphy. Only russian language is supported, and syntax of grammer templates heavely depends on the language family.
+
+Some examples from test_matcher.py
+
+ 'Я пошел гулять!'  ~  'Я :гл(дст,прш,мр,ед) :инф(дст)!'
+ 'Кто-то, взял ключ'  ~  ':мест(мр,ед,им), :гл(дст,прш,мр,ед) :сущ(мр,ед,им)'
+ 'что такое?'  ~  '* *?'
+ 'что такое?'  ~  '* * *'
+ 'Я пошел гулять!'  ~  ':мест :гл :инф!'
+
